@@ -2,10 +2,10 @@ import React from 'react'
 
 
 
-const cart = () => {
+const Cart = () => {
   return (
-    <div>cart</div>
+    <div className='w-full h-full bg-cyan-950  text-white rounded-[9px] p-3'>Cart</div>
   )
 }
 
-export default cart
+export default Cart

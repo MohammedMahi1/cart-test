@@ -8,7 +8,7 @@ type ProductProps = {
 
 const Product = ({ children,className }: ProductProps) => {
     return (
-        <div className={twMerge("bg-blue-200 m-3 p-3 rounded-[5px]",className)}>
+        <div className={twMerge("bg-blue-200 p-3 text-black font-bold rounded-[5px] w-full",className)}>
             {children}
         </div>
     )
