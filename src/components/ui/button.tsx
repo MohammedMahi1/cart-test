@@ -3,7 +3,6 @@
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { addToCart } from "@/lib/store/reducers/cartSlice";
 
-// components/AddToCartButton.tsx
 interface Props {
   product: {
     id: number;

@@ -1,4 +1,3 @@
-// features/cartSlice.ts
 import { CartItem, CartState } from '@/types/cart';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
@@ -25,7 +24,6 @@ const cartSlice = createSlice({
             } else {
                 state.items.push({ ...action.payload, quantity: 1 });
             }
-            // Save to localStorage
             if (typeof window !== 'undefined') {
                 localStorage.setItem('cart', JSON.stringify(state.items));
             }

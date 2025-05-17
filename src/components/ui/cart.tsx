@@ -1,4 +1,4 @@
-// components/Cart.tsx
+'use client'
 
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { addToCart, decreaseQuantity, removeFromCart } from "@/lib/store/reducers/cartSlice";

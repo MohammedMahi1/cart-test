@@ -9,7 +9,6 @@ const products = [
   { id: 1, title: 'Nike 2020', price: 120 },
   { id: 2, title: 'Nike 2020', price: 170 },
   { id: 3, title: 'Nike 2020', price: 100 },
-  // ... other products
 ];
 
 const HomePage = () => {
