@@ -3,6 +3,7 @@ export interface CartItem {
   title: string;
   price: number;
   quantity: number;
+  onCart:boolean;
 }
 
 export interface CartState {

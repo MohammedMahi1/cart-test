@@ -1,9 +1,10 @@
 "use client"
 import { useAppSelector } from '@/lib/hooks';
+import getItemSelector from '@/lib/store/selectors/getProductSelector';
 import { RootState } from '@/lib/store/store';
 import { useSelector } from 'react-redux'
 const Cart = () => {
-  const cartItems = useAppSelector((state) => state.cart.items);
+  const cartItems = useAppSelector(getItemSelector);
 
   return (
     <div>
@@ -11,13 +12,13 @@ const Cart = () => {
       {cartItems.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        <ul>
+        <div className='flex flex-col gap-4'>
           {cartItems.map((item:any) => (
-            <li key={item.id}>
+            <span key={item.id} className='bg-gray-700 w-fit p-2 rounded-2xl'>
               {item.title} - ${item.price} x {item.quantity}
-            </li>
+            </span>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
